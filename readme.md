@@ -20,7 +20,7 @@ ARXIV
 This is an implementation of a visual transformer.
 I used resnet(50-101-152) as backbone to extract feature maps and tokens from the images.
 The model converges very fast and reaches reasonable accuracy(95%++) on most publicly available small-medium datasets.
-
+![arch](images/archhhh2-770x388.png)
 
 ## How to run   
 First, install dependencies   
