@@ -1,0 +1,31 @@
+from torchvision import models
+DATA_DIR = 'D:/Datasets/birds/consolidated/consolidated/'
+IMAGE_SIZE = 224
+CHANNELS = 3
+BATCH_SIZE_TRAIN = 64
+BATCH_SIZE_TEST = 64
+N_EPOCHS = 50
+
+NUM_CLASSES = 250
+LEARNING_RATE = 3e-4
+GAMMA = 0.75
+EPSILON = 2e-7
+WEIGHT_DECAY = 0.00015
+LR_DECAY_PER = 1
+EARLY_STOP_PATIENCE = 3
+CHECKPOINT_PATH = 'checkpoint.pt'
+DECAY_TYPE = 'step'  # or 'cosine'
+COS_T0 = 6
+COS_T_MULT = 3
+
+TRANSFORMER_HEADS = 8
+TRANSFORMER_DEPTH = 4
+VTR_MLP_DIM = 1024
+VTR_DIM = 512
+
+VTR_DROPOUT = 0.1
+ATTN_DROPOUT = 0.1
+EMB_DROPOUT = 0.1
+
+opt_level = 'O1'
+BACKBONE = models.resnet152(pretrained=True)
