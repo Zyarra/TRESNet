@@ -55,5 +55,7 @@ trainer.fit(model, train, val)
 
 # test using the best model!
 trainer.test(test_dataloaders=test)
+The code is pretty self explanatory.
+
 ```
 
